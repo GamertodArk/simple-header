@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', 'Arial', sans-serif, serif;
+}
+
+header {
+	width: 100%;
+}
+
+header .top {
+	background-color: #0081c1;
+}
+
+header .top .content {
+	width: 100%;
+	margin: auto;
+	padding: 1em;
+	display: flex;
+	max-width: 1000px;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+header .top .content a {
+	color: #fff;
+	font-size: 13pt;
+	margin: 0px 0.3em;
+	text-decoration: none;
+}
+
+header .top .content a.presupuesto {
+	padding: 0.5em;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: #3cc948;
+	transition: 0.3s linear background-color;
+}
+
+header .top .content a.presupuesto:hover {
+	background-color: #111111;
+}
+
+header .bottom {
+	width: 100%;
+	margin: auto;
+	padding: 1em;
+	display: flex;
+	max-width: 1000px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .bottom .logo img {
+	height: 34px;
+	width: 100%;
+	max-width: 150px;
+}
+
+header .bottom nav ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	justify-content: center;
+}
+
+header .bottom nav ul li {
+	margin: 0px 0.2em;
+}
+
+header .bottom nav ul li a {
+	color: #0081c1;
+	font-size: 13.5pt;
+	border-radius: 5px;
+	padding: 0.5em 1em;
+	text-decoration: none;  
+}
+
+header .bottom nav ul li a:hover {
+	color: #fff;
+	background-color: #0081c1;
+}
+
+header .bottom nav ul li.father {
+	position: relative;
+}
+
+header .bottom nav ul li.father ul.children {
+	display: none;
+	left: 50%;
+	width: 150%;
+	z-index: 3;
+	padding: 0px 3px;
+	margin-top: 0.5em;
+	position: absolute;
+	flex-direction: column;
+	background-color: #fff;
+	box-shadow:0px 0px 8px #ccc;
+	transform: translateX(-50%);
+}
+
+header .bottom nav ul li.father:hover ul.children {
+	display:flex;
+}
+
+header .bottom nav ul li.father ul.children li {
+	width: 100%;
+	display: block;
+	margin: 0.5em 0px;
+	margin-bottom: 0.3em;
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid #333;
+}
+
+header .bottom nav ul li.father ul.children li:nth-last-child(1) {
+	border-bottom: none;
+}
+
+header .bottom nav ul li.father ul.children li a {
+	display: block;
+	padding: 0.5em 0px;
+	text-align: center;
+}
